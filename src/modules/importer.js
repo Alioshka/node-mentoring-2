@@ -1,6 +1,6 @@
 import fs from 'fs';
-import { promisify } from 'util';
 import utils from './utils';
+import {_promisify as promisify} from './promisify';
 
 const readdirAsync = promisify(fs.readdir);
 const readFileAsync = promisify(fs.readFile);
